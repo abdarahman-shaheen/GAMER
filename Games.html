@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(ss.jpg);
+        background-size: 100% 100%;
+      }
+      #logo {
+        width: 100%;
+        height: 70px;
+        background-color: rgba(240, 255, 255, 0.062);
+        padding-top: 10px;
+      }
+
+      .nav-item {
+        padding: 20px;
+        text-decoration: none;
+        color: rgb(238, 229, 229);
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #item {
+        color: rgba(238, 229, 229, 0.904);
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        right: 100px;
+      }
+      .regster {
+        background-color: rgb(27, 27, 27);
+        height: 20px;
+        text-decoration: none;
+        float: right;
+        margin-right: 20px;
+        position: relative;
+        bottom: 30px;
+        color: rgb(238, 229, 229);
+        font-size: 20px;
+        border-radius: 100px;
+        width: 150px;
+        height: 30px;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 10px;
+      }
+      p {
+        display: inline;
+      }
+
+      .nav-item:hover {
+        color: rgb(77, 74, 74);
+      }
+
+      #about-section {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+        color: white;
+      }
+
+      p {
+        display: inline;
+      }
+
+      #about-section {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+
+        color: white;
+      }
+
+      .game-image {
+        width: 250px;
+      }
+
+      #games-items {
+        width: 85%;
+        height: 1200px;
+        padding-top: 10px;
+        position: relative;
+        left: 200px;
+      }
+
+      .game {
+        background-color: rgba(240, 255, 255, 0.884);
+
+        height: 300px;
+        margin-top: 15px;
+        margin-left: 10px;
+
+        display: inline;
+        float: left;
+        text-align: center;
+
+        border-style: ridge;
+
+        border-color: rgb(240, 255, 255);
+      }
+      .game:hover {
+        background-color: rgb(237, 241, 241);
+      }
+      #logo h2 {
+        display: inline;
+      }
+
+      div h4 {
+        color: rgba(41, 39, 39, 0.829);
+      }
+      a {
+        text-decoration: none;
+      }
+
+      #Team_profile {
+        width: 100%;
+        padding-top: 50px;
+        height: 500px;
+      }
+      a {
+        color: black;
+      }
+      .profile-image {
+        width: 220px;
+        border-radius: 6%;
+        height: 240px;
+      }
+      .profile1 {
+        background-color: rgba(240, 255, 255, 0.062);
+        margin-top: 15px;
+        margin-left: 10px;
+        display: inline;
+        float: left;
+        text-align: center;
+        position: relative;
+        left: 280px;
+        border-radius: 7%;
+        border-style: solid;
+        border-color: rgba(240, 255, 255, 0.062);
+      }
+      .price {
+        display: inline;
+        color: rgb(36, 34, 32);
+      }
+      #botton {
+        background-color: rgb(32, 31, 31);
+        width: 200px;
+        height: 60px;
+        position: relative;
+        left: 43%;
+        bottom: 100px;
+        color: rgba(253, 253, 253, 0.705);
+        border-radius: 50px;
+        border: 1px solid rgba(15, 12, 12, 0.192);
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      #botton:hover {
+        color: brown;
+      }
+      .regster:hover {
+        color: brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="logo">
+      <a href="home page.html" style="text-decoration: none; color: black">
+        <img
+          src="./references/logo.svg"
+          style="width: 60px; float: left; padding-left: 30px"
+        />
+        <h1
+          style="
+            display: inline;
+            float: left;
+            margin-left: 10px;
+            position: relative;
+            bottom: 5px;
+          "
+        >
+          Gamer
+        </h1>
+      </a>
+
+      <nav id="item">
+        <br />
+        <a href="home page.html" class="nav-item">Home</a>
+        <a href="Games.html" class="nav-item">Games</a>
+        <a href="description.html" class="nav-item">Description games</a>
+        <a href="rating.html" class="nav-item">Reviews</a>
+        <a href="./home page.html#about-section" class="nav-item">About us</a>
+      </nav>
+      <a class="regster" href="signin.html"><span>Sign in</span></a>
+
+    </div>
+    <form method="POST" action="price.php">
+      <div id="games-items">
+        <h1 style="padding-left: 20px"><i>Collection Of Games</i></h1>
+        <div class="game">
+          <img class="game-image" src="references\fortnite.jpg" />
+          <h3>
+            <b><a href="description.html#g1">Fortnite</a></b>
+          </h3>
+          <h4>20JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g1" value="20" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/pubg.jpg" />
+          <h3>
+            <b><a href="description.html#g2">Pubg</a></b>
+          </h3>
+          <h4>25JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g2" value="25" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/fifa.jpg" />
+          <h3>
+            <b><a href="description.html#g3">Fifa 22</a></b>
+          </h3>
+          <h4>30JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g3" value="30" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/horizon.jpg" />
+          <h3>
+            <b><a href="description.html#g4">Horizon Zero Down</a></b>
+          </h3>
+          <h4>35JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g4" value="35" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/assassins.jpeg" />
+          <h3>
+            <b><a href="description.html#g5">Assassin's Creed Valhalla</a></b>
+          </h3>
+          <h4>40JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g5" value="40" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/red.jpg" />
+          <h3>
+            <b><a href="description.html#g6">Red Dead Redemption 2</a></b>
+          </h3>
+          <h4>45JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g6" value="45" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/last.jpg" />
+          <h3>
+            <b><a href="description.html#g7">The Last Of Us</a></b>
+          </h3>
+          <h4>50JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g7" value="50" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/resident.jpg" />
+          <h3>
+            <b><a href="description.html#g8">Resident Evil Village</a></b>
+          </h3>
+          <h4>55JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g8" value="55" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/uncharted.jpg" />
+          <h3>
+            <b><a href="description.html#g9">Uncharted 4</a></b>
+          </h3>
+          <h4>60JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g9" value="60" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/it-takes-two.jpg" />
+          <h3>
+            <b><a href="description.html#g10">It Takes Two</a></b>
+          </h3>
+          <h4>65JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g10" value="65" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/little_nightmares.webp" />
+          <h3>
+            <b><a href="description.html#g11">Little Nightmares</a></b>
+          </h3>
+          <h4>70JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g11" value="70" />
+          </label>
+        </div>
+        <div class="game">
+          <img class="game-image" src="./references/the-witcher-3.webp" />
+          <h3>
+            <b><a href="description.html#g12">The Witcher 3</a></b>
+          </h3>
+          <h4>75JD</h4>
+
+          <label
+            ><h3 class="price">Add Game</h3>
+            <input type="checkbox" name="g12" value="75" />
+          </label>
+        </div>
+      </div>
+
+      <input id="botton" type="submit" value="Buy" />
+    </form>
+  </body>
+</html>
